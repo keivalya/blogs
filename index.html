@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Keivalya's Blogs</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta name="description" content="Keivalya's blog on AI, ML, and more.">
+    <meta name="description" content="Keivalya's blog on AI, ML, robotics, and software engineering.">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <h1>Keivalya's Blogs</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="https://www.keivalya.com/">Portfolio</a>
-        </nav>
-    </header>
-    <section class="post-list">
-        <div><span>16 Apr, 2025</span> - <a href="pages/namaste.html">Namaste!</a></div>
-    </section>
-    <script src="scripts.js"></script>
-</body>
+    <div class="page-shell">
+        <header class="site-header">
+            <h1>Keivalya's Blogs</h1>
+            <nav aria-label="Primary navigation" class="site-nav">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="https://www.keivalya.com/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+            </nav>
+        </header>
 
+        <main>
+            <section class="post-list" aria-label="Blog posts">
+                <ul>
+                    <li class="post-item">
+                        <article>
+                            <time datetime="2025-04-16">Apr 16, 2025</time>
+                            <h2><a href="pages/namaste.html">Namaste!</a></h2>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
 </html>
