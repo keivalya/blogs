@@ -34,11 +34,30 @@
             <p>Business-model innovation is central: RaaS and subscription structures shift spend from capex to opex while bundling maintenance, updates, and performance accountability. This aligns with how humanoid deployments are entering production buying cycles.</p>
             <p>Funding narratives remain larger than deployment narratives. Capital flowing into humanoids is substantial, but investment volume does not guarantee fleet-scale, reliable operations. The deployment lens should still be contract count, runtime, output, error rate, and SLA adherence.</p>
 
-            <pre class="mermaid">pie title Industrial robot installations by region (2024)
-  "Asia" : 74
-  "Europe" : 16
-  "Americas" : 9
-  "Other / rounding" : 1</pre>
+            <figure class="static-chart" aria-labelledby="installations-chart-title">
+                <figcaption id="installations-chart-title">Industrial robot installations by region (2024)</figcaption>
+                <svg viewBox="0 0 680 360" role="img" aria-label="Pie chart showing Asia 74%, Europe 16%, Americas 9%, Other 1%">
+                    <g transform="translate(180, 180)">
+                        <circle r="110" fill="#eef2ff"></circle>
+                        <path d="M0,0 L0,-110 A110,110 0 1,1 -109.78,6.91 Z" fill="#c7d2fe"></path>
+                        <path d="M0,0 L-109.78,6.91 A110,110 0 0,1 -64.66,-88.99 Z" fill="#d9f99d"></path>
+                        <path d="M0,0 L-64.66,-88.99 A110,110 0 0,1 -6.91,-109.78 Z" fill="#86efac"></path>
+                        <path d="M0,0 L-6.91,-109.78 A110,110 0 0,1 0,-110 Z" fill="#ddd6fe"></path>
+                        <circle r="56" fill="#f8fafc"></circle>
+                    </g>
+
+                    <g font-size="14" fill="#0f172a" font-family="Inter, sans-serif">
+                        <rect x="380" y="108" width="14" height="14" fill="#c7d2fe"></rect>
+                        <text x="402" y="120">Asia - 74%</text>
+                        <rect x="380" y="136" width="14" height="14" fill="#d9f99d"></rect>
+                        <text x="402" y="148">Europe - 16%</text>
+                        <rect x="380" y="164" width="14" height="14" fill="#86efac"></rect>
+                        <text x="402" y="176">Americas - 9%</text>
+                        <rect x="380" y="192" width="14" height="14" fill="#ddd6fe"></rect>
+                        <text x="402" y="204">Other / rounding - 1%</text>
+                    </g>
+                </svg>
+            </figure>
 
             <h2>Where robots are actually deployed</h2>
             <p>The demo-to-deployment transition is clearest where environments are structured and uptime is monetizable: warehouses, factories, hospitals, and logistics networks.</p>

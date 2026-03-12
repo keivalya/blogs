@@ -139,6 +139,39 @@ time {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+.markdown-content pre.mermaid {
+    font-family: "Inter", sans-serif;
+    line-height: 1.2;
+    padding: 1rem 1.25rem;
+}
+
+.markdown-content pre.mermaid svg {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.static-chart {
+    margin: 0.9rem 0 1.2rem;
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #f8fafc;
+}
+
+.static-chart figcaption {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.55rem;
+}
+
+.static-chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .table-wrap {
     overflow-x: auto;
     margin: 0.8rem 0 1.1rem;
