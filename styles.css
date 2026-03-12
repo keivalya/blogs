@@ -164,6 +164,8 @@ time {
     font-weight: 600;
     color: var(--text);
     margin-bottom: 0.55rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
 }
 
 .static-chart svg {
