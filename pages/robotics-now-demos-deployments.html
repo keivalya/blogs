@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics NOW: Demos → Deployments | Keivalya's Blogs</title>
+    <meta name="description" content="A deployment-first view of robotics in 2026: from staged demos to repeatable operations.">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts.js" defer></script>
+    <script type="module">
+        import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+        mermaid.initialize({ startOnLoad: true, theme: "default" });
+    </script>
+</head>
+<body>
+    <div class="page-shell">
+        <header data-site-header data-page-title="Robotics NOW: Demos → Deployments" data-home-href="../index.html"></header>
+
+        <main class="post-content markdown-content">
+            <h2>Executive summary</h2>
+            <p>Robotics is not primarily about moving from perception to action anymore. The differentiator in 2026 is whether a system can move from <strong>a staged demo</strong> to <strong>a repeatable deployment</strong> with measurable throughput, safety acceptance, maintainability, and business value. Warehousing and manufacturing remain the fastest path to durable deployments, while healthcare and autonomous delivery show what deployment at scale looks like when regulation and unit-economics are solved.</p>
+            <p>Two anchor narratives sharpen what this means right now. First, the Agility story frames humanoids as a response to industrial labor constraints and brownfield integration limits, with early commercial agreements emerging via Robots-as-a-Service. Second, Rodney Brooks argues that current humanoid hype underestimates missing prerequisites, especially tactile sensing and safe locomotion. The synthesis: <strong>near-term deployments will be narrow-task, operations-led, and safety-gated</strong>, even when the robot looks general-purpose.</p>
+            <p>A concrete signal that deployment is now the center of gravity is scale. Industrial robot installations reached <strong>542,000 units in 2024</strong>, with <strong>Asia accounting for 74%</strong>. Professional service robots reached roughly <strong>199,000 units sold in 2024</strong>, led by transport and logistics robots at 102,900 units. Subscription and rental models are also normalizing capex-light adoption.</p>
+            <p>For the next 1 to 5 years, the biggest opportunities are fleet-scale warehouse automation, task-specialized humanoids in bounded roles, continued medical robotics expansion, and autonomous delivery where operational playbooks are already established. The biggest risks are integration-cost overruns, safety backlash after incidents, and long-tail brittleness in real environments.</p>
+
+            <h2>The anchor insight: Agility's Digit and Brooks' dexterity warning</h2>
+            <p>The Agility narrative is strongest where early humanoid value actually sits: repetitive, physically taxing material-movement tasks in warehouses and factories, especially where retooling for fixed automation is costly. The key deployment pattern is commercial agreements replacing publicity pilots, with robots attached to existing automation islands rather than full end-to-end autonomy.</p>
+            <p>One operational detail matters more than form factor: <strong>commercial design</strong>. Toyota Motor Manufacturing Canada reportedly signed a commercial RaaS agreement following a pilot, and public reporting notes an initial workflow centered on unloading totes from an automated tugger to bridge two automated lines.</p>
+            <p>Brooks' critique is the right counterweight. He argues that human dexterity depends heavily on touch and force sensing, while robotics lacks deep touch-data pipelines comparable to vision. He also emphasizes safety constraints for large bipedal robots in shared spaces. So the strongest synthesis is practical: deployment is advancing without solving full human-level dexterity, by narrowing scope and hardening operations.</p>
+
+            <h2>Market trends and funding</h2>
+            <p>Industrial robotics is already an at-scale deployment economy. Reported 2024 totals put industrial installations at 542,000, with Asia leading by a wide margin. Service robotics also continued growing in logistics, hospitality, and cleaning categories.</p>
+            <p>Business-model innovation is central: RaaS and subscription structures shift spend from capex to opex while bundling maintenance, updates, and performance accountability. This aligns with how humanoid deployments are entering production buying cycles.</p>
+            <p>Funding narratives remain larger than deployment narratives. Capital flowing into humanoids is substantial, but investment volume does not guarantee fleet-scale, reliable operations. The deployment lens should still be contract count, runtime, output, error rate, and SLA adherence.</p>
+
+            <pre class="mermaid">pie title Industrial robot installations by region (2024)
+  "Asia" : 74
+  "Europe" : 16
+  "Americas" : 9
+  "Other / rounding" : 1</pre>
+
+            <h2>Where robots are actually deployed</h2>
+            <p>The demo-to-deployment transition is clearest where environments are structured and uptime is monetizable: warehouses, factories, hospitals, and logistics networks.</p>
+            <p>In e-commerce logistics, deployment scale is measured in fleets and throughput. In manufacturing, the most credible humanoid work remains bounded loading and material-flow tasks inside already automated zones. In healthcare, durable economics come from installed base and utilization. In autonomous delivery, the strongest signals are end-to-end operational continuity and geographic expansion.</p>
+
+            <h2>Technologies enabling deployment</h2>
+            <p>What changed is not only stronger AI models but a deployment-oriented stack: shared datasets, VLA policies, tactile sensing, simulation-to-real loops, and fleet operations tooling.</p>
+            <p><strong>Touch and force sensing</strong> are emerging as practical differentiators for contact-rich manipulation. Progress is arriving as capability wedges, not instant full dexterity. <strong>Hybrid control</strong> is also standard in practice: learning pipelines plus classical controls and simulation for reliability and safety. Finally, <strong>fleet software</strong> is becoming the moat through monitoring, orchestration, and OTA update systems.</p>
+
+            <h2>Barriers to deployment</h2>
+            <p><strong>Technical:</strong> long-tail environment variation still breaks robustness and economics.</p>
+            <p><strong>Safety and regulation:</strong> certification pace and liability concerns remain gating factors outside controlled zones.</p>
+            <p><strong>Economic:</strong> integration and serviceability often dominate total cost over robot hardware alone.</p>
+            <p><strong>Social:</strong> workforce acceptance, role redesign, and change management are required for scale.</p>
+
+            <h2>Case studies: robots that crossed the demo-to-deployment gap</h2>
+
+            <h3>Comparative table of companies and products</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company / product</th>
+                            <th>Robot type</th>
+                            <th>Payload / capacity</th>
+                            <th>Autonomy level (deployed)</th>
+                            <th>Deployment scale signal</th>
+                            <th>Price / model</th>
+                            <th>Primary use case</th>
+                            <th>Maturity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Agility Digit</td>
+                            <td>Humanoid biped</td>
+                            <td>35 lb carry; 4-hour battery (publicly stated)</td>
+                            <td>Commercial tasks in structured workflows</td>
+                            <td>100k totes moved; post-pilot commercial RaaS agreement</td>
+                            <td>RaaS (public); price not disclosed</td>
+                            <td>Tote and box handling</td>
+                            <td>Early commercial</td>
+                        </tr>
+                        <tr>
+                            <td>Figure 02</td>
+                            <td>Humanoid</td>
+                            <td>20 kg load capacity (publicly stated)</td>
+                            <td>Defined production-cell tasks</td>
+                            <td>10-hour shifts; published runtime and parts moved</td>
+                            <td>Not disclosed</td>
+                            <td>Sheet-metal handling and loading</td>
+                            <td>Pilot to sustained run</td>
+                        </tr>
+                        <tr>
+                            <td>Locus Origin</td>
+                            <td>Warehouse AMR / cobot</td>
+                            <td>36 kg / 80 lb</td>
+                            <td>Autonomous nav with human-in-loop picking</td>
+                            <td>Case studies with measured productivity and error gains</td>
+                            <td>RaaS subscription</td>
+                            <td>Picking and transport</td>
+                            <td>Mature deployments</td>
+                        </tr>
+                        <tr>
+                            <td>Amazon Vulcan</td>
+                            <td>Warehouse manipulation system</td>
+                            <td>~75% inventory coverage framing</td>
+                            <td>Autonomous picking and stowing with tactile feedback</td>
+                            <td>Named deployed facilities and large order volume</td>
+                            <td>Internal platform</td>
+                            <td>Contact-rich bin manipulation</td>
+                            <td>Scaling internally</td>
+                        </tr>
+                        <tr>
+                            <td>Zipline Platform 1/2</td>
+                            <td>Autonomous delivery drones</td>
+                            <td>4 lb (P1), 8 lb (P2)</td>
+                            <td>Autonomous delivery network operations</td>
+                            <td>2M+ deliveries and regional expansion</td>
+                            <td>Delivery-as-a-service</td>
+                            <td>Medical and retail logistics</td>
+                            <td>Mature service scale</td>
+                        </tr>
+                        <tr>
+                            <td>Intuitive da Vinci</td>
+                            <td>Surgical robotics platform</td>
+                            <td>Clinical device</td>
+                            <td>Surgeon-in-the-loop telemanipulation</td>
+                            <td>Large installed base and annual procedure volume</td>
+                            <td>System + instrument economics</td>
+                            <td>Minimally invasive surgery</td>
+                            <td>Highly mature</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Deployment case studies with metrics</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case</th>
+                            <th>Environment</th>
+                            <th>Task</th>
+                            <th>Deployment metrics (public)</th>
+                            <th>Cost / ROI (public)</th>
+                            <th>Why it is deployment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Digit at GXO + Toyota</td>
+                            <td>Logistics and automotive supply chain</td>
+                            <td>Tote handling and line bridging</td>
+                            <td>100,000+ totes; post-pilot contract for seven robots</td>
+                            <td>RaaS disclosed; price not disclosed</td>
+                            <td>Named sites, quantified throughput, and commercial agreement</td>
+                        </tr>
+                        <tr>
+                            <td>Figure 02 at BMW</td>
+                            <td>Automotive production environment</td>
+                            <td>Sheet-metal placement for welding</td>
+                            <td>10-hour shifts, five days/week, 90,000+ parts, 1,250+ runtime hours</td>
+                            <td>Price not disclosed</td>
+                            <td>Long-duration output in real production conditions</td>
+                        </tr>
+                        <tr>
+                            <td>Locus AMRs at Staples Canada</td>
+                            <td>Fulfillment center</td>
+                            <td>Collaborative picking</td>
+                            <td>Higher UPH, lower errors, reduced training time, faster ramp</td>
+                            <td>Fast ROI claim; no absolute figure</td>
+                            <td>Operational KPIs over sustained use, not one-off demo</td>
+                        </tr>
+                        <tr>
+                            <td>Amazon fleet + Vulcan</td>
+                            <td>Fulfillment centers</td>
+                            <td>Transport, sortation, tactile stow/pick</td>
+                            <td>1M robots network-wide; fleet-efficiency gains; deployed tactile systems</td>
+                            <td>Internal economics not itemized</td>
+                            <td>Fleet-scale operations with continuous optimization</td>
+                        </tr>
+                        <tr>
+                            <td>Zipline delivery network</td>
+                            <td>National and metro logistics</td>
+                            <td>Autonomous last-mile and medical delivery</td>
+                            <td>2M+ deliveries and geography expansion</td>
+                            <td>Service economics not fully public</td>
+                            <td>End-to-end service operations at scale</td>
+                        </tr>
+                        <tr>
+                            <td>Intuitive da Vinci</td>
+                            <td>Hospitals and ORs</td>
+                            <td>Minimally invasive surgery</td>
+                            <td>Large installed base and multi-million annual procedures</td>
+                            <td>Capex + recurring instruments/maintenance</td>
+                            <td>Sustained, reimbursement-backed clinical utilization</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Forecast and narrative</h2>
+            <p><strong>1 to 2 years:</strong> deployment discipline, RaaS contracts, and SLA-backed service become the default buying pattern.</p>
+            <p><strong>2 to 3 years:</strong> single-purpose humanoids become a clearer category in bounded industrial tasks.</p>
+            <p><strong>3 to 5 years:</strong> incumbent-led staged scaling expands, while safety remains the hard gate for shared-space autonomy.</p>
+
+            <h3>Selected milestones</h3>
+            <pre class="mermaid">timeline
+  title Robotics NOW: Demos → Deployments (selected milestones)
+  2012 : Amazon begins large-scale warehouse automation
+  2024 : Figure and BMW announce commercial humanoid deployment agreement
+  2025 : Amazon deploys its one-millionth robot; introduces fleet AI efficiency gains
+  2025 : Digit surpasses 100,000 totes moved in commercial deployment (GXO)
+  2025 : Brooks publishes dexterity and safety critique
+  2026 : Toyota contracts seven Digit units under RaaS after a year-long pilot
+  2026 : Zipline reports 2M+ deliveries and expands to new metros
+  2028 : Hyundai plans first Atlas factory deployments
+  2030 : Hyundai plans expansion to more complex operations</pre>
+
+            <h3>Tech maturity vs generality</h3>
+            <pre class="mermaid">quadrantChart
+  title Tech maturity vs generality (deployment lens)
+  x-axis Narrow task --> General task
+  y-axis Pilot --> Scaled deployment
+  quadrant-1 Scaled + general-ish
+  quadrant-2 Scaled + narrow
+  quadrant-3 Pilot + narrow
+  quadrant-4 Pilot + general
+  "Surgical robotics (da Vinci)": [0.55, 0.90]
+  "Warehouse AMRs (Locus-style)": [0.30, 0.85]
+  "Autonomous delivery (Zipline)": [0.35, 0.80]
+  "Tactile picking (Vulcan)": [0.35, 0.70]
+  "Humanoid material handling (Digit/Figure)": [0.55, 0.55]
+  "Human-level dexterity humanoids": [0.85, 0.20]</pre>
+
+            <h2>Recommended messaging</h2>
+            <p>A durable framing for this cycle is simple: <strong>deployment is the product</strong>. The robotics moat in 2026 is not just model quality. It is integration speed, safety rigor, fleet operations, maintainability, and economic repeatability.</p>
+
+            <h3>Headline options</h3>
+            <ul>
+                <li>Robotics NOW: Demos → Deployments</li>
+                <li>From Robot Videos to Robot Value: The Deployment Era</li>
+                <li>Why the Next Robotics Breakthrough Is Operational, Not Algorithmic</li>
+            </ul>
+
+            <h3>Tweet-length hooks</h3>
+            <ul>
+                <li>Robotics is not moving from perception to action anymore. It is moving from demos to deployment: uptime, integration, safety, and ROI.</li>
+                <li>Humanoids are finally getting hired, mostly as logistics appliances with legs. General-purpose dexterity is still far.</li>
+                <li>The robotics moat in 2026 is operations: fleet management, safety certification, maintenance, and workflow integration.</li>
+                <li>To spot winners, stop watching demos and start tracking contracts, SLAs, error rates, and training time.</li>
+                <li>Touch is back. The next leap is not only VLA models, but force, contact planning, and reliability in messy real environments.</li>
+            </ul>
+
+            <a class="back-link" href="../index.html">Back to Home</a>
+        </main>
+    </div>
+</body>
+</html>
